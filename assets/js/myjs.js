@@ -38,3 +38,47 @@ function showSlides(n) {
 }
 
 
+let slideIndex_2 = 1;
+showSlides_2(slideIndex_2);
+
+function plusSlides_2(n) {
+    showSlides_2(slideIndex_2 += n);
+}
+
+function currentSlide_2(n) {
+    showSlides_2(slideIndex_2 = n);
+}
+
+function showSlides_2(n) {
+    let i;
+    let slides_2 = document.getElementsByClassName("mySlides_2");
+    if (n > slides_2.length) {slideIndex_2 = 1}
+    if (n < 1) {slideIndex_2 = slides_2.length}
+    for (i = 0; i < slides_2.length; i++) {
+        slides_2[i].style.display = "none";
+    }
+    slides_2[slideIndex_2-1].style.display = "block";
+}
+
+
+let slideIndex_3 = 1;
+showSlides_3(slideIndex_3);
+
+function plusSlides_3(n) {
+    showSlides_3(slideIndex_3 += n);
+}
+
+function currentSlide_3(n) {
+    showSlides_3(slideIndex_3 = n);
+}
+
+function showSlides_3(n) {
+    let i;
+    let slides_3 = document.getElementsByClassName("mySlides_3");
+    if (n > slides_3.length) {slideIndex_3 = 1}
+    if (n < 1) {slideIndex_3 = slides_3.length}
+    for (i = 0; i < slides_3.length; i++) {
+        slides_3[i].style.display = "none";
+    }
+    slides_3[slideIndex_3-1].style.display = "block";
+}
